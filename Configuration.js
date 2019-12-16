@@ -14,23 +14,23 @@ class Configuration{
     constructor(){
         this.database_host = 'localhost';
         this.database_username = 'root';  
-        this.database_password = ''; /* Enter your database password here */
+        this.database_password = 'amalatma1'; /* Enter your database password here */
         this.database_port = 3306;
         this.database_name = 'Houdini';
         this.database_dialect = 'mysql';
         
         this.AS2_SALT = 'Y(02.>\'H}t":E1';
         this.AS3_SALT = `a1ebe00441f5aecb185d0ec178ca2305Y(02.>'H}t\":E1_root`;
-        this.salt = this.AS2_SALT; // Use AS2 salt by default
+        this.salt = this.AS3_SALT; // Use AS2 salt by default
         this.port = 4444;
-        this.site_key = ''; /* Register a pair of keys from google recaptcha (v3) and fill in your site key here */
-        this.secret_key = ''; /* Register a pair of keys from google recaptcha (v3) and fill in your secret key here */
+        this.site_key = '6Ldk5sYUAAAAACFUPh_cUwOLlEQpGIg1WttSaYrW'; /* Register a pair of keys from google recaptcha (v3) and fill in your site key here */
+        this.secret_key = '6Ldk5sYUAAAAAJ5b5zmgwm6fbv9zNoqf2BA_Zys9'; /* Register a pair of keys from google recaptcha (v3) and fill in your secret key here */
 
-        this.activation = 0; /* Set this to 1 if you want to use the activate email feature and fill in the below: */
-        this.gmail_user = ''; /* Register a new GMAIL account as the email used to send the reset password link, or change the service from GMAIL to your preference.*/
-        this.gmail_pass = ''; /* Enter the GMAIL accounts password here*/
-        this.cpps_name = 'Flake'; /* The name of your CPPS that will appear in the activation email */
-        this.sub_domain = 'create.flake'; /* The sub-domain that you are using to host the manager, as the link has to be i.e. create.yourcpps.com/activate, if this isn't set properly it'll break the activate account via email feature. It should load from the same subdomain that you use to register i.e. register.cpps.com or create.cpps.com  */
+        this.activation = 1; /* Set this to 1 if you want to use the activate email feature and fill in the below: */
+        this.gmail_user = 'cpclub91@gmail.com'; /* Register a new GMAIL account as the email used to send the reset password link, or change the service from GMAIL to your preference.*/
+        this.gmail_pass = 'amalatma1'; /* Enter the GMAIL accounts password here*/
+        this.cpps_name = 'CpClub'; /* The name of your CPPS that will appear in the activation email */
+        this.sub_domain = 'create.cpclub.ml'; /* The sub-domain that you are using to host the manager, as the link has to be i.e. create.yourcpps.com/activate, if this isn't set properly it'll break the activate account via email feature. It should load from the same subdomain that you use to register i.e. register.cpps.com or create.cpps.com  */
     
         this.approval = 1; /* Change to 0 if you want to approve usernames upon registration */
         this.bad_names = ['Rockhopper', 'fuck'] /* Add mascot names, swear words etc whatever you don't want users to have as a username */
